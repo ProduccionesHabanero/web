@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Catálogo de Productos</title>
+
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="Imagenes/Logo.png"></a>
+        <h1>Mi empresa</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="Quienes somos.html">¿Quiénes somos?<a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contenido principal-->
+    <main>
+        <h1>Catálogo de Productos</h1>
+        <div class="catalogo">
+            <!-- Habanero curtido especial -->
+            <div class="producto">
+                <img src="Imagenes/Habanero C.png"Producto 1">
+                <div class="producto-info">
+                    <h2>Habanero curtido especial</h2>
+                    <p>El habanero curtido es una preparacion culinaria que consiste en conservar habaneros en vinagre o limón con cebolla y zanahoria para derles un sabor y textura únicos. Contenido: 450g</p>
+                    <p class="precio">$250.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="Imagenes/Licuado.png"Producto 2">
+                <div class="producto-info">
+                    <h2>Habanero licuado</h2>
+                    <p> Este tipo de curtido es una deliciosa preparación que consiste en licuar el chile habanero y conservar solamente en limón, para un mejor sabor. Contenido: 800g</p>
+                    <p class="precio">$200.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="Imagenes/salsa H.png" alt="Producto 3">
+                <div class="producto-info">
+                    <h2>Habanero Rojo</h2>
+                    <p> El habanero rojo de "México Lindo" es un tipo de salsa que se conoce por su intenso sabor picante y su apariencia única, elaborada desde un proceso artesanal. Contenido: 150ml</p>
+                    <p class="precio">$45.00</p>
+                </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="Imagenes/polvoh.png" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Habanero en polvo</h2>
+                    <p>El habanero en polvo es un producto hecho por alumnos del emsad 29 el chile se muele y se le agrega sal. Contenido: 150g</p>
+                    <p class="precio">$90.00</p>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="Imagenes/Salsa C.webp"Producto 4">
+                <div class="producto-info">
+                    <h2>Salsa catsup Clemente Jacques</h2>
+                    <p> Una salsa tipo catsup elaborada con chile habanero molido dándole un sabor exquisito. Contenido: 220g</p>
+                    <p class="precio">$16.00</p>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="Imagenes/MHV.png"Producto 4">
+                <div class="producto-info">
+                    <h2>Habanero Verde</h2>
+                    <p>La salsa habanero verde es una variante de la salsa de chile habanero, pero menos picante que las versiones maduras. Aunque no es tan picante, sigue siendo muy potente y llena de sabor. Contenido: 150ml</p>
+                    <p class="precio">$45.00</p>
+                </div>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="Imagenes/Seco.jpeg"Producto 4">
+                <div class="producto-info">
+                    <h2>Habanero entero seco</h2>
+                    <p>El chile habanero seco es una variedad de chile que se obtiene al deshidratar los frutos del chile habanero, conocido por su intensidad y picor característico. Contenido: 250g</p>
+                    <p class="precio">$15.00</p>
+                </div>
+            </div>
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="Imagenes/Habanero.jpeg" alt="Producto 4">
+                <div class="producto-info">
+                    <h2>Habanero fresco</h2>
+                    <p>Descubre el sabor y la intensidad del chile habanero, una joya de la cocina mexicana. Este chile, reconocido como uno de los más picantes del mundo, es famoso por su explosiva mezcla de picor y sabor único. Contenido: 250g</p>
+                    <p class="precio">$15.00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Mi empresa. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: huertoemsad29@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+    </script>
+</body>
+</html>

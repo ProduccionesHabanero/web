@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="Imagenes/Logo.png"></a>
+        <h1>Mi empresa</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="productos.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+<li><a href="Quienes somos.html">¿Quiénes somos?<a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="Imagenes/Huerto.jpg" width="200" height="300"/>
+            </div>
+            <div class="derecha">
+                <h2>EMSAD 29</h2>
+                <p>Nuestra misión es brindarte un servicio y productos personalizado más actuales y deliciosos, elaborados en nuestra institución educativa con excelentes precios y de muy buena calidad. </p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>PROMOCIONES</h2>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <img src="Imagenes/Habanero c.png" alt="Producto">
+                    <div class="producto-info">
+                        <h2>Habanero curtido Especial </h2>
+                        <p>El habanero curtido es una preparacion culinaria que consiste en conservar habaneros en vinagre o limón con cebolla y zanahoria para  derles un sabor y textura únicos.</p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="producto">
+                    <img src="Imagenes/salsa H.png" alt="Producto">
+                    <div class="producto-info">
+                        <h2>Habanero loco </h2>
+                        <p>El habanero loco es un tipo de salsa que se conoce por su intenso sabor picante y su apariencia única, elaborada desde un proceso artesanal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Servicios y Precios</h2>
+                <ul>
+                    <li>Habanero curtido Especial: $250</li>
+                    <li>Habanero licuado: $200</li>
+                    <li>Habanero loco: $50</li>
+                    <li>Habanero en polvo: desde $90</li>
+                    <!-- Agregar más servicios según sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+                <img src="Imagenes/Servicio.png" alt="Servicio a domicilio">
+            </div>
+        </section>
+
+        <!-- Sección de Marcas -->
+        <section id="marcas">
+            <h2>Nuestras Marcas</h2>
+            <div class="brands">
+                <img src="Imagenes/marca1.jpeg" alt="Marca 1">
+                <img src="Imagenes/marca2.webp" alt="Marca 2">
+                <img src="Imagenes/marca3.jpeg" alt="Marca 3">
+                <img src="Imagenes/marca4.png" alt="Marca 4">
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Mi empresa. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: huertoemsad29@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>
